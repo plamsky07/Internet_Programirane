@@ -1,0 +1,68 @@
+:root {
+  font-family: Arial, system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f6f7fb;
+  color: #111;
+}
+
+.container {
+  max-width: 520px;
+  margin: 48px auto;
+  padding: 0 16px;
+}
+
+h1 {
+  margin: 0 0 18px 0;
+  font-size: 24px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e6e8ef;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 10px 20px rgba(20, 20, 20, 0.05);
+  display: grid;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+}
+
+input,
+select {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #cfd5e3;
+  outline: none;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus {
+  border-color: #6b7cff;
+}
+
+.result {
+  font-size: 26px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.error {
+  margin: 0;
+  font-weight: 700;
+  color: #c4002b;
+}
+
+.hint {
+  margin: 0;
+  color: #555;
+}
