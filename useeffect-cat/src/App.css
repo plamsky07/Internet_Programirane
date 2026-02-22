@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: Arial, system-ui, sans-serif;
+}
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(800px 400px at 20% 20%, #3b82f633, transparent),
+    radial-gradient(800px 400px at 80% 80%, #22c55e33, transparent),
+    linear-gradient(135deg, #0f172a, #020617);
+  color: white;
+  padding: 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 520px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 32px;
+  border-radius: 24px;
+  text-align: center;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 32px;
+  letter-spacing: 0.5px;
+}
+
+.img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin: 20px 0;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+  animation: fadeIn 0.25s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.97); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+button {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #6366f1, #22c55e);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.15s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #ff6b6b;
+  font-weight: bold;
+}
