@@ -1,0 +1,100 @@
+/* Центриране на съдържанието и чист фон на целия екран */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* пълна височина на екрана */
+  width: 100vw;  /* пълна широчина на екрана */
+  background: #f5f5f5; /* светъл неутрален фон */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Формата */
+.registration-form {
+  background: #ffffff;
+  padding: 40px 35px;
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  width: 360px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.registration-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+.registration-form h2 {
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* Полета за въвеждане */
+.form-group {
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #444;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #6a11cb;
+  box-shadow: 0 0 8px rgba(106, 17, 203, 0.3);
+}
+
+/* Бутон */
+.clear-btn {
+  margin-top: 12px;
+  width: 100%;
+  padding: 12px;
+  background: #ff6b6b;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.clear-btn:hover {
+  background: #ff4c4c;
+  transform: scale(1.05);
+}
+
+/* Показване на въведените данни */
+.output {
+  margin-top: 20px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  width: 360px;
+  text-align: left;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.output p {
+  margin: 6px 0;
+  color: #333;
+  font-size: 15px;
+}
